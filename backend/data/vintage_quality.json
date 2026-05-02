@@ -1,0 +1,1181 @@
+[
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2010,
+    "score": 96,
+    "descriptor": "outstanding",
+    "drinking_from": 2018,
+    "drinking_to": 2038,
+    "notes": "Powerful, structured vintage with exceptional concentration. Profound depth and cellar potential."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2011,
+    "score": 87,
+    "descriptor": "good",
+    "drinking_from": 2015,
+    "drinking_to": 2026,
+    "notes": "Warm, early harvest. Forward and accessible but lacks the density of the great vintages."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2012,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2017,
+    "drinking_to": 2032,
+    "notes": "Elegant, classical Burgundy character. Good acidity and fine tannin structure."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2013,
+    "score": 89,
+    "descriptor": "good",
+    "drinking_from": 2016,
+    "drinking_to": 2028,
+    "notes": "Difficult growing season but conscientious producers made focused, pure wines with good acidity."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2014,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2017,
+    "drinking_to": 2032,
+    "notes": "Underrated vintage. Cool growing season produced fresh, precise wines with excellent aging potential."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2015,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2040,
+    "notes": "Rich, concentrated vintage. Dark fruit, excellent structure. One of the finest modern Burgundy vintages."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2016,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2021,
+    "drinking_to": 2038,
+    "notes": "Hail-ravaged but survivors show beautiful purity. Classic Côte de Nuits character with fine tannins."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2019,
+    "drinking_to": 2032,
+    "notes": "Early harvest with ripe, approachable style. More forward than recent vintages but with genuine pleasure."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2018,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2023,
+    "drinking_to": 2040,
+    "notes": "Voluptuous, opulent vintage. Rich fruit with supple tannins. Broad appeal with serious aging potential."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2019,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2024,
+    "drinking_to": 2045,
+    "notes": "Extraordinary vintage. Perfect balance of richness and freshness. Potentially the finest of the decade."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2020,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2025,
+    "drinking_to": 2042,
+    "notes": "Three exceptional vintages in a row. Concentrated and structured with fine acidity preserving freshness."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2021,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2024,
+    "drinking_to": 2035,
+    "notes": "Challenging frost and mildew year but best producers made classic, cool-climate Pinot Noir of real elegance."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2022,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2026,
+    "drinking_to": 2040,
+    "notes": "Historic heat waves produced rich, deeply colored wines. Exceptional balance for the vintage character."
+  },
+  {
+    "region_slug": "gevrey-chambertin",
+    "vintage": 2023,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2026,
+    "drinking_to": 2038,
+    "notes": "Challenging growing season overcame by careful viticulture. Fresh and elegant wines with good typicity."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2010,
+    "score": 96,
+    "descriptor": "outstanding",
+    "drinking_from": 2018,
+    "drinking_to": 2038,
+    "notes": "Powerful, structured vintage across the Côte d'Or. Exceptional depth and longevity."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2011,
+    "score": 87,
+    "descriptor": "good",
+    "drinking_from": 2015,
+    "drinking_to": 2026,
+    "notes": "Warm year. Forward, accessible wines that lack the grip of better vintages."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2012,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2017,
+    "drinking_to": 2032,
+    "notes": "Elegant and classical. Hail damage reduced yields but quality at the top is high."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2013,
+    "score": 89,
+    "descriptor": "good",
+    "drinking_from": 2016,
+    "drinking_to": 2028,
+    "notes": "Later harvest than usual. Leaner style with high acidity. For early drinking or patient cellaring."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2014,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2017,
+    "drinking_to": 2032,
+    "notes": "Saved by a magnificent September. Fresh, precise wines with real aging potential."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2015,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2040,
+    "notes": "Rich, voluptuous vintage across the Côte d'Or. Dark fruit, concentration, and excellent structure."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2016,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2021,
+    "drinking_to": 2038,
+    "notes": "Post-hail survivors show classic, pure Pinot Noir character. Reduced quantities, exceptional quality."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2019,
+    "drinking_to": 2032,
+    "notes": "Approachable, fruit-forward style. Early ripening vintage with generous, supple character."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2018,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2023,
+    "drinking_to": 2040,
+    "notes": "One of the most complete vintages in recent memory. Richness and freshness in harmony."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2019,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2024,
+    "drinking_to": 2045,
+    "notes": "Potentially the finest Burgundy vintage of the century thus far. Exquisite balance and concentration."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2020,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2025,
+    "drinking_to": 2042,
+    "notes": "Third consecutive great vintage. Concentrated, structured wines with impressive freshness for the heat."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2021,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2024,
+    "drinking_to": 2035,
+    "notes": "Difficult spring and summer overcame. Best wines are pure, elegant, and classically Burgundian."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2022,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2026,
+    "drinking_to": 2040,
+    "notes": "Extreme heat managed well by top producers. Deep, rich wines with impressive structure."
+  },
+  {
+    "region_slug": "bourgogne",
+    "vintage": 2023,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2026,
+    "drinking_to": 2038,
+    "notes": "Wet summer but fine autumn saved the vintage. Fresh, aromatic, and classically styled."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2010,
+    "score": 100,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2060,
+    "notes": "Universally considered one of the greatest Pauillac vintages in history. Power, precision, and immortality."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2011,
+    "score": 88,
+    "descriptor": "good",
+    "drinking_from": 2016,
+    "drinking_to": 2030,
+    "notes": "Uneven vintage. Some brilliant wines from top châteaux but inconsistency across the appellation."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2012,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2018,
+    "drinking_to": 2035,
+    "notes": "Solid, reliable vintage. Good concentration with classic Cabernet structure. Under-appreciated."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2013,
+    "score": 86,
+    "descriptor": "good",
+    "drinking_from": 2016,
+    "drinking_to": 2028,
+    "notes": "Difficult harvest conditions. Lighter style wines for earlier consumption. Best drunk soon."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2014,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2020,
+    "drinking_to": 2038,
+    "notes": "Underrated vintage of real quality. Classic Left Bank structure with fresh acidity and real longevity."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2015,
+    "score": 98,
+    "descriptor": "exceptional",
+    "drinking_from": 2025,
+    "drinking_to": 2055,
+    "notes": "Magnificent vintage. Rich, concentrated, with exemplary balance. Will age for decades."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2016,
+    "score": 100,
+    "descriptor": "exceptional",
+    "drinking_from": 2026,
+    "drinking_to": 2065,
+    "notes": "Perfect vintage. A once-in-a-generation achievement. Profound concentration and impeccable structure."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2022,
+    "drinking_to": 2040,
+    "notes": "Post-frost vintage. Smaller crops but quality is high. Earlier-drinking style than the flanking years."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2018,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2026,
+    "drinking_to": 2055,
+    "notes": "Rich, powerful, and remarkably complete. One of the greatest modern Bordeaux vintages."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2019,
+    "score": 98,
+    "descriptor": "exceptional",
+    "drinking_from": 2027,
+    "drinking_to": 2055,
+    "notes": "Another outstanding vintage, more classically structured than 2018. Exceptional balance and precision."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2020,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2028,
+    "drinking_to": 2055,
+    "notes": "Third consecutive exceptional vintage. Concentration meets freshness in a remarkable achievement."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2021,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2026,
+    "drinking_to": 2045,
+    "notes": "Difficult growing season overcome by meticulous sorting. Fresh, elegant, and surprisingly complete."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2022,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2030,
+    "drinking_to": 2060,
+    "notes": "Historic heat wave vintage. Remarkably balanced given the conditions. Long-lived and impressive."
+  },
+  {
+    "region_slug": "margaux",
+    "vintage": 2023,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2028,
+    "drinking_to": 2048,
+    "notes": "Wet conditions overcome with careful canopy management. Fresh, aromatic style with classic structure."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2010,
+    "score": 98,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2060,
+    "notes": "One of the greatest Barolo vintages of all time. Perfect balance of power, tannin, and acidity."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2011,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2016,
+    "drinking_to": 2040,
+    "notes": "Warm vintage, more opulent and approachable than usual. Forward style but with genuine quality."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2012,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2018,
+    "drinking_to": 2045,
+    "notes": "Excellent structure and concentration. Classical Barolo character with the substance to age well."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2013,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2055,
+    "notes": "Great traditional vintage. Powerful, tannic, and built for the very long term. A collector's wine."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2014,
+    "score": 86,
+    "descriptor": "good",
+    "drinking_from": 2016,
+    "drinking_to": 2030,
+    "notes": "Wet, difficult vintage. Lighter and earlier-drinking than the great years. Best drunk sooner."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2015,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2055,
+    "notes": "Exceptional warmth produced rich, concentrated Nebbiolo. Superb balance and enormous ageing potential."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2016,
+    "score": 100,
+    "descriptor": "exceptional",
+    "drinking_from": 2026,
+    "drinking_to": 2065,
+    "notes": "Universally acclaimed as a once-in-a-generation vintage. Perfect structure, depth, and longevity."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2022,
+    "drinking_to": 2045,
+    "notes": "Hot, drought year. Richer and more concentrated than typical but with good underlying structure."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2018,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2025,
+    "drinking_to": 2055,
+    "notes": "Return to classical style after heat of 2017. Superb depth, tannin, and acidity. Outstanding."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2019,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2026,
+    "drinking_to": 2055,
+    "notes": "Elegant, aromatic vintage. Slightly less structured than 2016/2018 but with beautiful finesse."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2020,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2026,
+    "drinking_to": 2050,
+    "notes": "Warm but not extreme. Approachable style relative to the great vintages with good aging potential."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2021,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2026,
+    "drinking_to": 2045,
+    "notes": "Cooler vintage with fine freshness and classical aromatic profile. Elegant rather than powerful."
+  },
+  {
+    "region_slug": "barolo",
+    "vintage": 2022,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2028,
+    "drinking_to": 2055,
+    "notes": "Extreme heat year managed well. Rich, concentrated Nebbiolo with impressive structural integrity."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2010,
+    "score": 98,
+    "descriptor": "exceptional",
+    "drinking_from": 2016,
+    "drinking_to": 2050,
+    "notes": "Near-perfect vintage shared with Barolo. Slightly more accessible earlier given Barbaresco's style."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2011,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2014,
+    "drinking_to": 2035,
+    "notes": "Warm, forward vintage. More approachable than the great years but with genuine pleasure."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2012,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2016,
+    "drinking_to": 2040,
+    "notes": "Classical Barbaresco character. Floral, earthy, with firm but refined tannins."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2013,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2018,
+    "drinking_to": 2050,
+    "notes": "Exceptional structure and depth. One of the finest Barbaresco vintages in decades."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2014,
+    "score": 86,
+    "descriptor": "good",
+    "drinking_from": 2016,
+    "drinking_to": 2028,
+    "notes": "Difficult wet year. Lighter wines more suited to earlier consumption."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2015,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2050,
+    "notes": "Rich, full vintage. Excellent depth and Barbaresco typicity. Fine aging trajectory."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2016,
+    "score": 100,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2060,
+    "notes": "As great as Barolo 2016 — exceptional in every measure. The wine of a lifetime."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2020,
+    "drinking_to": 2040,
+    "notes": "Hot year with rich, ripe fruit. More accessible earlier than the classic structure vintages."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2018,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2023,
+    "drinking_to": 2050,
+    "notes": "Return to classical form. Superb aromatic complexity and structure. Outstanding longevity."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2019,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2023,
+    "drinking_to": 2050,
+    "notes": "Elegant and finessed. Slightly more forward than 2018 but with genuine class."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2020,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2024,
+    "drinking_to": 2045,
+    "notes": "Warm but structured. Earlier-drinking than the great years with good typicity."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2021,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2024,
+    "drinking_to": 2042,
+    "notes": "Cooler, aromatic vintage. Classic floral and earthy character with fine-grained tannins."
+  },
+  {
+    "region_slug": "barbaresco",
+    "vintage": 2022,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2026,
+    "drinking_to": 2050,
+    "notes": "Extreme heat managed excellently. Rich, concentrated wines with surprising balance."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2010,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2015,
+    "drinking_to": 2040,
+    "notes": "Cool growing season produced elegant, structured wines with natural freshness and longevity."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2011,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2015,
+    "drinking_to": 2035,
+    "notes": "Very cool, late vintage. Leaner style that rewards patience. More Bordeaux-like than typical Napa."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2012,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2016,
+    "drinking_to": 2042,
+    "notes": "Powerful and concentrated with excellent natural acidity. One of the finest modern Napa vintages."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2013,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2016,
+    "drinking_to": 2042,
+    "notes": "Back-to-back exceptional vintages. Rich, full-bodied, with superb concentration and structure."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2014,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2018,
+    "drinking_to": 2042,
+    "notes": "Three consecutive exceptional vintages — a remarkable run. Balanced and ageworthy."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2015,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2018,
+    "drinking_to": 2040,
+    "notes": "Drought year with concentrated, powerful wines. Slightly lower acidity than the great run but impressive."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2016,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2045,
+    "notes": "Exceptional balance of richness and structure. One of the most age-worthy modern Napa vintages."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2017,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2020,
+    "drinking_to": 2038,
+    "notes": "Fires late in season affected some estates. Best unaffected wines show exceptional concentration."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2018,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2045,
+    "notes": "Outstanding vintage with perfect ripening conditions. Rich, structured, and beautifully balanced."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2019,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2023,
+    "drinking_to": 2044,
+    "notes": "Elegant and precise. Cooler year produced more restrained, classically structured wines."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2020,
+    "score": 87,
+    "descriptor": "good",
+    "drinking_from": 2023,
+    "drinking_to": 2035,
+    "notes": "Wildfire smoke impacted many estates. Careful sorting and selection required. Variable quality."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2021,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2025,
+    "drinking_to": 2044,
+    "notes": "Excellent rebound vintage. Ideal growing conditions produced rich, structured, and age-worthy wines."
+  },
+  {
+    "region_slug": "napa-valley",
+    "vintage": 2022,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2026,
+    "drinking_to": 2046,
+    "notes": "Warm but balanced vintage. Powerful, full-bodied wines with impressive structure and longevity."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2008,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2016,
+    "drinking_to": 2045,
+    "notes": "Widely considered the finest Champagne vintage of the 2000s. Exceptional freshness, tension, and longevity."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2012,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2045,
+    "notes": "Outstanding ripeness and acidity in balance. Profound, complex Champagnes built for the long haul."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2013,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2019,
+    "drinking_to": 2038,
+    "notes": "Late, cool harvest delivering wines of precision and acidity. Classic, food-friendly character."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2014,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2018,
+    "drinking_to": 2036,
+    "notes": "Consistent, generous vintage. Good ripeness with the acidity to age well. Reliable quality."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2015,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2042,
+    "notes": "Rich, ripe, and generous. More opulent style than 2012 or 2008 but with impressive complexity."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2016,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2023,
+    "drinking_to": 2045,
+    "notes": "Small crop but exceptional quality. Concentrated, precise, and beautifully structured. Outstanding longevity."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2022,
+    "drinking_to": 2038,
+    "notes": "Good, accessible vintage. More forward character than the great years but with genuine quality."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2018,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2025,
+    "drinking_to": 2048,
+    "notes": "Generous, ripe vintage matching the quality of 2008 and 2012. Long-lived and impressive."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2019,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2026,
+    "drinking_to": 2048,
+    "notes": "Warm but fresh vintage with fine balance. Rich, aromatic Champagnes with real aging potential."
+  },
+  {
+    "region_slug": "champagne",
+    "vintage": 2020,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2027,
+    "drinking_to": 2048,
+    "notes": "Elegant, precise vintage with excellent acidity. Will develop complexity over many years."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2001,
+    "score": 100,
+    "descriptor": "exceptional",
+    "drinking_from": 2006,
+    "drinking_to": 2060,
+    "notes": "The greatest Sauternes vintage since 1990. Perfect botrytis, extraordinary concentration and balance."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2009,
+    "score": 98,
+    "descriptor": "exceptional",
+    "drinking_from": 2014,
+    "drinking_to": 2055,
+    "notes": "Rich, opulent vintage with tremendous concentration. The finest vintage since 2001."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2010,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2015,
+    "drinking_to": 2050,
+    "notes": "Exceptional balance of botrytis and acidity. Wines of great finesse and longevity."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2011,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2014,
+    "drinking_to": 2040,
+    "notes": "Good botrytis development produced wines of concentration and complexity. Earlier-drinking style."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2013,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2016,
+    "drinking_to": 2040,
+    "notes": "Late botrytis harvest yielded wines of real elegance if inconsistent across estates."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2014,
+    "score": 87,
+    "descriptor": "good",
+    "drinking_from": 2017,
+    "drinking_to": 2035,
+    "notes": "Lighter style with less botrytis concentration. Drink sooner rather than later."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2015,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2050,
+    "notes": "Rich, golden vintage with classic Sauternes opulence. Excellent botrytis and aging potential."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2016,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2020,
+    "drinking_to": 2045,
+    "notes": "Elegant, precise vintage. More restrained than 2015 but with excellent acidity and balance."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2017,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2022,
+    "drinking_to": 2048,
+    "notes": "Exceptional botrytis conditions in a warm year. Rich, complex wines with impressive longevity."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2019,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2024,
+    "drinking_to": 2055,
+    "notes": "One of the finest modern Sauternes vintages. Perfect botrytis and exceptional concentration."
+  },
+  {
+    "region_slug": "sauternes",
+    "vintage": 2020,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2025,
+    "drinking_to": 2048,
+    "notes": "Warm vintage with good botrytis. Rich and generous with fine balance."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2015,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2017,
+    "drinking_to": 2050,
+    "notes": "Warm year producing rich, concentrated Riesling from Spätlese to TBA level. Remarkable botrytis wines."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2016,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2018,
+    "drinking_to": 2055,
+    "notes": "Perhaps the greatest Mosel vintage in decades. Perfect acidity and Botrytis balance. Wines of extraordinary longevity."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2017,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2019,
+    "drinking_to": 2040,
+    "notes": "Spring frost impacted yields. Survivors show concentrated, elegant character with fine petrol notes developing."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2018,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2050,
+    "notes": "Drought year. Concentrated, racy Rieslings with steel-like acidity. Will develop magnificently."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2019,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2021,
+    "drinking_to": 2055,
+    "notes": "Three outstanding vintages in a row. Perfect balance of ripeness and Mosel-typical acidity."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2020,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2055,
+    "notes": "Elegant, precise vintage. Excellent sugar/acid balance producing wines of real finesse and longevity."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2021,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2023,
+    "drinking_to": 2048,
+    "notes": "Cooler year with pronounced Mosel minerality and acidity. Wines of great typicity and aging potential."
+  },
+  {
+    "region_slug": "mosel",
+    "vintage": 2022,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2024,
+    "drinking_to": 2055,
+    "notes": "Hot summer produced concentrated, rich Rieslings underpinned by remarkable Mosel acidity. Outstanding."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2010,
+    "score": 98,
+    "descriptor": "exceptional",
+    "drinking_from": 2015,
+    "drinking_to": 2050,
+    "notes": "Unanimously acclaimed as one of the greatest modern Rioja vintages. Power, elegance, and exceptional longevity."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2012,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2016,
+    "drinking_to": 2045,
+    "notes": "Powerful, concentrated vintage. Full-bodied Tempranillo with deep fruit and firm tannins."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2014,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2018,
+    "drinking_to": 2045,
+    "notes": "Elegant, precise vintage of real classical Rioja character. Fine tannins and impressive balance."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2015,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2019,
+    "drinking_to": 2045,
+    "notes": "Three exceptional vintages in close succession. Rich, opulent, and ageworthy in the modern style."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2016,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2020,
+    "drinking_to": 2045,
+    "notes": "Excellent balance of fruit and structure. Among the finest vintages for Gran Reserva production."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2017,
+    "score": 92,
+    "descriptor": "very_good",
+    "drinking_from": 2020,
+    "drinking_to": 2038,
+    "notes": "Dry, warm year. Rich and generous but slightly less complexity than the great vintages."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2018,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2021,
+    "drinking_to": 2040,
+    "notes": "Good Rioja vintage with fresh acidity and fine-grained tannins. Solid aging potential."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2019,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2023,
+    "drinking_to": 2042,
+    "notes": "Excellent, balanced vintage. Classical Rioja fruit profile with structure supporting long-term development."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2020,
+    "score": 93,
+    "descriptor": "very_good",
+    "drinking_from": 2024,
+    "drinking_to": 2042,
+    "notes": "Warm but fresh. Concentrated wines with good underlying structure for medium-term cellaring."
+  },
+  {
+    "region_slug": "rioja",
+    "vintage": 2021,
+    "score": 91,
+    "descriptor": "very_good",
+    "drinking_from": 2025,
+    "drinking_to": 2040,
+    "notes": "Fresher, lighter style. Classical Rioja aromas with good acidity and approachable tannins."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2012,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2015,
+    "drinking_to": 2035,
+    "notes": "Outstanding, warm vintage for Willamette Pinot Noir. Rich, concentrated, and beautifully structured."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2013,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2016,
+    "drinking_to": 2033,
+    "notes": "Long, warm growing season. Powerful, concentrated Pinot Noir with depth and excellent aging potential."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2014,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2017,
+    "drinking_to": 2038,
+    "notes": "Widely considered the greatest modern Willamette vintage. Exceptional balance, structure, and longevity."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2015,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2017,
+    "drinking_to": 2030,
+    "notes": "Warm, atypically rich vintage for the Valley. More opulent style, best drunk before the decade's end."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2016,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2019,
+    "drinking_to": 2040,
+    "notes": "Equal to 2014 in many assessments. Perfect growing season, exceptional balance of fruit and acidity."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2017,
+    "score": 90,
+    "descriptor": "very_good",
+    "drinking_from": 2019,
+    "drinking_to": 2032,
+    "notes": "Smoke taint affected some estates late in harvest. Wines from the best sites remain excellent."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2018,
+    "score": 97,
+    "descriptor": "exceptional",
+    "drinking_from": 2021,
+    "drinking_to": 2040,
+    "notes": "Near-perfect growing season. Rich, concentrated, and elegantly structured. One of the decade's finest."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2019,
+    "score": 96,
+    "descriptor": "exceptional",
+    "drinking_from": 2022,
+    "drinking_to": 2040,
+    "notes": "Long, cool ripening season produced wines of exceptional aromatics, acidity, and structure."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2020,
+    "score": 85,
+    "descriptor": "good",
+    "drinking_from": 2022,
+    "drinking_to": 2030,
+    "notes": "Wildfire smoke a major factor. Many lots declassified. Best unaffected wines retain quality but variable."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2021,
+    "score": 95,
+    "descriptor": "exceptional",
+    "drinking_from": 2024,
+    "drinking_to": 2040,
+    "notes": "Strong rebound vintage. Excellent growing conditions produced structured, aromatic Pinot Noir."
+  },
+  {
+    "region_slug": "willamette-valley",
+    "vintage": 2022,
+    "score": 94,
+    "descriptor": "outstanding",
+    "drinking_from": 2025,
+    "drinking_to": 2040,
+    "notes": "Warm but balanced. Rich, generous Pinot Noir with fine structure and real aging potential."
+  }
+]

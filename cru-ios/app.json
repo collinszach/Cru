@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Cru",
+    "slug": "cru",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cru",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.cru.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cru uses the camera to scan wine labels."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        { "cameraPermission": "Cru uses the camera to scan wine labels." }
+      ],
+      [
+        "expo-build-properties",
+        { "ios": { "deploymentTarget": "17.0" } }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

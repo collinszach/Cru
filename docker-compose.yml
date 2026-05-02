@@ -1,0 +1,123 @@
+services:
+  cru-db:
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    container_name: cru-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-cru}
+      POSTGRES_USER: ${POSTGRES_USER:-cru}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - cru_postgres_data:/var/lib/postgresql/data
+    networks:
+      - cru-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-cru} -d ${POSTGRES_DB:-cru}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  cru-redis:
+    image: redis:7-alpine
+    container_name: cru-redis
+    volumes:
+      - cru_redis_data:/data
+    networks:
+      - cru-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  cru-minio:
+    image: minio/minio:latest
+    container_name: cru-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes:
+      - cru_minio_data:/data
+    ports:
+      - "9010:9000"
+      - "9011:9001"
+    networks:
+      - cru-network
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  cru-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cru-backend
+    depends_on:
+      cru-db:
+        condition: service_healthy
+      cru-redis:
+        condition: service_healthy
+      cru-minio:
+        condition: service_started
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      REDIS_URL: ${REDIS_URL:-redis://cru-redis:6379}
+      MINIO_ENDPOINT: ${MINIO_ENDPOINT:-cru-minio:9000}
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      MINIO_BUCKET_LABELS: ${MINIO_BUCKET_LABELS:-wine-labels}
+      MINIO_SECURE: ${MINIO_SECURE:-false}
+      CLERK_SECRET_KEY: ${CLERK_SECRET_KEY}
+      CLERK_JWKS_URL: ${CLERK_JWKS_URL}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-["http://localhost:3030"]}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SECRET_KEY: ${SECRET_KEY}
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      POSTGRES_HOST: ${POSTGRES_HOST:-cru-db}
+      POSTGRES_PORT: ${POSTGRES_PORT:-5432}
+      POSTGRES_DB: ${POSTGRES_DB:-cru}
+      POSTGRES_USER: ${POSTGRES_USER:-cru}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8030:8000"
+    networks:
+      - cru-network
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  cru-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: cru-frontend
+    depends_on:
+      - cru-backend
+    environment:
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      CLERK_SECRET_KEY: ${CLERK_SECRET_KEY}
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8030}
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "3030:3000"
+    networks:
+      - cru-network
+
+networks:
+  cru-network:
+    driver: bridge
+
+volumes:
+  cru_postgres_data:
+  cru_redis_data:
+  cru_minio_data:

@@ -1,0 +1,346 @@
+{
+  "primary": {
+    "fruit": {
+      "red_fruit": [
+        "red cherry",
+        "raspberry",
+        "strawberry",
+        "redcurrant",
+        "cranberry",
+        "pomegranate",
+        "red plum",
+        "wild strawberry"
+      ],
+      "black_fruit": [
+        "blackberry",
+        "blackcurrant",
+        "black cherry",
+        "blueberry",
+        "black plum",
+        "boysenberry",
+        "mulberry"
+      ],
+      "tropical_fruit": [
+        "mango",
+        "passion fruit",
+        "pineapple",
+        "guava",
+        "lychee",
+        "banana",
+        "papaya",
+        "melon",
+        "kiwi"
+      ],
+      "citrus": [
+        "lemon",
+        "lime",
+        "grapefruit",
+        "orange peel",
+        "mandarin",
+        "bergamot",
+        "yuzu",
+        "lemon zest",
+        "lime zest"
+      ],
+      "stone_fruit": [
+        "peach",
+        "apricot",
+        "nectarine",
+        "white plum",
+        "cherry",
+        "greengage"
+      ],
+      "dried_fruit": [
+        "raisin",
+        "fig",
+        "date",
+        "prune",
+        "sultana",
+        "dried apricot",
+        "dried cherry",
+        "dried cranberry",
+        "currant"
+      ]
+    },
+    "floral": [
+      "violet",
+      "rose",
+      "rose petal",
+      "orange blossom",
+      "elderflower",
+      "acacia",
+      "jasmine",
+      "iris",
+      "lavender",
+      "peony",
+      "lilac",
+      "honeysuckle"
+    ],
+    "herbal_vegetal": {
+      "green": [
+        "fresh herbs",
+        "cut grass",
+        "green bell pepper",
+        "tomato leaf",
+        "asparagus",
+        "nettle",
+        "fresh mint"
+      ],
+      "other": [
+        "eucalyptus",
+        "mint",
+        "black olive",
+        "fennel",
+        "tarragon",
+        "basil",
+        "sage",
+        "thyme",
+        "rosemary"
+      ]
+    },
+    "spice": [
+      "black pepper",
+      "white pepper",
+      "green peppercorn",
+      "pink peppercorn",
+      "cinnamon",
+      "clove",
+      "anise",
+      "star anise",
+      "liquorice",
+      "ginger",
+      "nutmeg",
+      "juniper"
+    ],
+    "mineral": [
+      "wet stone",
+      "chalk",
+      "limestone",
+      "flint",
+      "slate",
+      "graphite",
+      "oyster shell",
+      "sea spray",
+      "saline"
+    ],
+    "earthy": [
+      "earth",
+      "soil",
+      "clay",
+      "forest floor"
+    ],
+    "other": [
+      "honey",
+      "beeswax",
+      "lanolin"
+    ]
+  },
+  "secondary": {
+    "lees": [
+      "bread dough",
+      "brioche",
+      "biscuit",
+      "pastry",
+      "cream",
+      "cheese rind",
+      "yogurt",
+      "sourdough",
+      "yeasty"
+    ],
+    "mlf": [
+      "butter",
+      "cream",
+      "crème fraîche",
+      "butterscotch",
+      "sour cream"
+    ],
+    "oak": {
+      "new_oak": [
+        "vanilla",
+        "coconut",
+        "clove",
+        "nutmeg",
+        "toast",
+        "charcoal"
+      ],
+      "seasoned_oak": [
+        "cedar",
+        "cigar box",
+        "sandalwood",
+        "pencil shavings"
+      ],
+      "heavily_toasted": [
+        "smoke",
+        "coffee",
+        "dark chocolate",
+        "mocha",
+        "espresso",
+        "char"
+      ]
+    }
+  },
+  "tertiary": {
+    "oxidative": [
+      "almond",
+      "marzipan",
+      "hazelnut",
+      "walnut",
+      "dried fruit",
+      "toffee",
+      "caramel",
+      "salted caramel",
+      "chocolate",
+      "coffee",
+      "dried flowers",
+      "orange marmalade",
+      "dried orange peel"
+    ],
+    "reductive": [
+      "petrol",
+      "kerosene",
+      "rubber",
+      "plastic",
+      "struck flint",
+      "gunflint",
+      "wet wool",
+      "reduction",
+      "match",
+      "sulfur"
+    ],
+    "fruit_development": [
+      "dried fig",
+      "prune",
+      "dried apricot",
+      "marmalade",
+      "jam",
+      "raisin",
+      "date",
+      "cooked fruit",
+      "stewed fruit",
+      "baked apple"
+    ],
+    "earthy_tertiary": [
+      "mushroom",
+      "forest floor",
+      "earth",
+      "truffle",
+      "game",
+      "leather",
+      "tobacco",
+      "cigar",
+      "compost",
+      "barnyard",
+      "brett",
+      "sous-bois",
+      "undergrowth",
+      "wet leaves",
+      "autumn leaves"
+    ]
+  },
+  "palate_structure": {
+    "sweetness": [
+      "bone_dry",
+      "dry",
+      "off_dry",
+      "medium_dry",
+      "medium_sweet",
+      "sweet",
+      "luscious"
+    ],
+    "acidity": [
+      "low",
+      "medium-",
+      "medium",
+      "medium+",
+      "high"
+    ],
+    "tannin": [
+      "low",
+      "medium-",
+      "medium",
+      "medium+",
+      "high"
+    ],
+    "tannin_nature": [
+      "fine",
+      "silky",
+      "velvety",
+      "firm",
+      "grippy",
+      "drying",
+      "astringent",
+      "chalky",
+      "grainy",
+      "powdery"
+    ],
+    "alcohol": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "body": [
+      "light",
+      "medium-",
+      "medium",
+      "medium+",
+      "full"
+    ],
+    "finish": [
+      "short",
+      "medium",
+      "long",
+      "very_long"
+    ],
+    "intensity": [
+      "light",
+      "medium-",
+      "medium",
+      "medium+",
+      "pronounced"
+    ]
+  },
+  "appearance": {
+    "clarity": [
+      "clear",
+      "hazy",
+      "cloudy"
+    ],
+    "intensity": [
+      "pale",
+      "medium",
+      "deep"
+    ],
+    "red_hues": [
+      "purple",
+      "ruby",
+      "garnet",
+      "tawny",
+      "brick",
+      "orange"
+    ],
+    "white_hues": [
+      "lemon",
+      "gold",
+      "amber",
+      "brown"
+    ],
+    "rose_hues": [
+      "pink",
+      "salmon",
+      "copper",
+      "orange"
+    ]
+  },
+  "faults": [
+    "TCA (cork taint)",
+    "oxidation",
+    "reduction",
+    "brett (Brettanomyces)",
+    "VA (volatile acidity)",
+    "refermentation",
+    "heat damage",
+    "lightstrike",
+    "mousiness",
+    "geraniol"
+  ]
+}

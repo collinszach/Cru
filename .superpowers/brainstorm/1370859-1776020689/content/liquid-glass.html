@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #181010;
+  font-family: -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 48px;
+  min-height: 100vh;
+}
+
+h2 { color: #fff; font-size: 17px; font-weight: 500; margin-bottom: 4px; text-align: center; }
+.sub { color: #666; font-size: 13px; margin-bottom: 32px; text-align: center; line-height: 1.5; }
+.sub strong { color: #c9a84c; }
+
+.frame {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ============ PHONE SHELL ============ */
+.phone {
+  width: 200px;
+  height: 432px;
+  border-radius: 44px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.12),
+    0 30px 80px rgba(0,0,0,0.8),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/* Warm wine-wash background */
+.phone-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, rgba(139,26,46,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 50% at 80% 80%, rgba(90,40,20,0.2) 0%, transparent 60%),
+    linear-gradient(170deg, #f7f0e8 0%, #ede3d5 40%, #e4d5c0 100%);
+}
+
+/* Dynamic island */
+.island {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 22px;
+  background: #000;
+  border-radius: 14px;
+  z-index: 20;
+}
+
+/* Glass utility */
+.glass {
+  background: rgba(255,255,255,0.38);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.65);
+}
+.glass-dark {
+  background: rgba(30,12,8,0.55);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 42px 18px 14px;
+  z-index: 10;
+  background: rgba(247,240,232,0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.header .title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a0c08;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+.header .meta {
+  font-size: 10px;
+  color: rgba(90,55,35,0.6);
+  margin-top: 3px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+/* Filter pills */
+.filters {
+  position: absolute;
+  top: 100px;
+  left: 0; right: 0;
+  display: flex;
+  gap: 6px;
+  padding: 8px 16px;
+  overflow: hidden;
+  z-index: 9;
+}
+.pill {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+.pill-active {
+  background: #8b1a2e;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(139,26,46,0.4);
+}
+.pill-glass {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.7);
+  color: rgba(60,30,15,0.7);
+}
+
+/* Scroll area */
+.scroll {
+  position: absolute;
+  top: 136px;
+  left: 0; right: 0;
+  bottom: 68px;
+  overflow: hidden;
+  padding: 8px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+/* Bottle card */
+.bottle-card {
+  border-radius: 20px;
+  padding: 14px 14px 12px;
+  position: relative;
+  overflow: hidden;
+}
+.bottle-card .vintage {
+  font-size: 32px;
+  font-weight: 200;
+  color: #8b1a2e;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.bottle-card .wine-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a0c08;
+  margin-top: 3px;
+  letter-spacing: -0.2px;
+}
+.bottle-card .producer {
+  font-size: 10px;
+  color: rgba(60,30,15,0.55);
+  margin-top: 1px;
+  font-weight: 400;
+}
+.bottle-card .window {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.window-peak { background: #4caf50; box-shadow: 0 0 6px rgba(76,175,80,0.5); }
+.window-approaching { background: #c9a84c; box-shadow: 0 0 6px rgba(201,168,76,0.4); }
+.window-hold { background: rgba(100,80,60,0.35); }
+
+.bottle-card .divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(139,26,46,0.25) 0%, transparent 100%);
+  margin-top: 10px;
+}
+
+/* Featured card - larger */
+.card-featured {
+  border-radius: 24px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255,255,255,0.52);
+  backdrop-filter: blur(28px) saturate(200%);
+  border: 1px solid rgba(255,255,255,0.75);
+  box-shadow: 0 4px 24px rgba(139,26,46,0.08);
+}
+.card-featured .vintage {
+  font-size: 40px;
+  font-weight: 100;
+  color: #8b1a2e;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+.card-featured .wine-name { font-size: 13px; font-weight: 700; color: #1a0c08; margin-top: 4px; }
+.card-featured .producer { font-size: 11px; color: rgba(60,30,15,0.5); margin-top: 1px; }
+.card-featured .badge {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: rgba(139,26,46,0.12);
+  border: 1px solid rgba(139,26,46,0.2);
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #8b1a2e;
+  letter-spacing: 0.5px;
+}
+.card-featured .row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.card-featured .stat {
+  flex: 1;
+  background: rgba(139,26,46,0.07);
+  border-radius: 10px;
+  padding: 5px 7px;
+  text-align: center;
+}
+.card-featured .stat-val { font-size: 13px; font-weight: 700; color: #8b1a2e; }
+.card-featured .stat-label { font-size: 8px; color: rgba(60,30,15,0.45); font-weight: 500; letter-spacing: 0.3px; margin-top: 1px; }
+
+/* Standard cards */
+.card-std {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 2px 12px rgba(100,50,30,0.06);
+}
+
+/* Tab bar */
+.tab-bar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 72px;
+  background: rgba(247,240,232,0.65);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border-top: 1px solid rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 8px 16px;
+  z-index: 10;
+}
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 1;
+}
+.tab-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.tab-icon-active {
+  background: rgba(139,26,46,0.15);
+}
+.tab-label { font-size: 9px; font-weight: 500; color: rgba(60,30,15,0.4); }
+.tab-label-active { color: #8b1a2e; font-weight: 700; }
+
+.scan-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #8b1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  box-shadow: 0 4px 16px rgba(139,26,46,0.45), 0 0 0 3px rgba(255,255,255,0.5);
+  margin-top: -6px;
+  flex-shrink: 0;
+}
+
+/* ============ ANNOTATION PANEL ============ */
+.annotations {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.ann-group {}
+.ann-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #c9a84c;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ann-body {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.55;
+}
+.ann-body strong { color: #e8ddd4; font-weight: 500; }
+
+.commitment {
+  background: rgba(139,26,46,0.12);
+  border: 1px solid rgba(139,26,46,0.25);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+}
+.commitment .title { font-size: 14px; font-weight: 700; color: #e8ddd4; margin-bottom: 6px; }
+.commitment .body { font-size: 12px; color: #999; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<h2>Committed Direction: iOS 26 Liquid Glass</h2>
+<p class="sub">Warm cream base · Frosted glass cards · Garnet accent · SF Pro Display numerals<br>
+<strong>Organic, minimal, native to iOS 26</strong></p>
+
+<div class="frame">
+
+  <!-- PHONE -->
+  <div class="phone">
+    <div class="phone-bg"></div>
+    <div class="island"></div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="title">My Cellar</div>
+      <div class="meta">47 bottles &nbsp;·&nbsp; 12 regions &nbsp;·&nbsp; Est. $14,200</div>
+    </div>
+
+    <!-- Filter pills -->
+    <div class="filters">
+      <div class="pill pill-active">All</div>
+      <div class="pill pill-glass">Burgundy</div>
+      <div class="pill pill-glass">Bordeaux</div>
+    </div>
+
+    <!-- Cards -->
+    <div class="scroll">
+
+      <!-- Featured / hero card -->
+      <div class="card-featured">
+        <div class="vintage">2015</div>
+        <div class="wine-name">Chambertin Grand Cru</div>
+        <div class="producer">Domaine Rousseau · Burgundy</div>
+        <div class="badge">PEAK</div>
+        <div class="row">
+          <div class="stat"><div class="stat-val">96</div><div class="stat-label">Score</div></div>
+          <div class="stat"><div class="stat-val">×3</div><div class="stat-label">Bottles</div></div>
+          <div class="stat"><div class="stat-val">2026</div><div class="stat-label">Drink by</div></div>
+        </div>
+      </div>
+
+      <!-- Standard cards -->
+      <div class="bottle-card card-std">
+        <div class="vintage">2018</div>
+        <div class="wine-name">Pichon Baron</div>
+        <div class="producer">Château Pichon Baron · Pauillac</div>
+        <div class="window window-approaching"></div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="bottle-card card-std">
+        <div class="vintage">2019</div>
+        <div class="wine-name">Cask 23</div>
+        <div class="producer">Stag's Leap Wine Cellars · Napa</div>
+        <div class="window window-hold"></div>
+        <div class="divider"></div>
+      </div>
+
+    </div>
+
+    <!-- Tab bar -->
+    <div class="tab-bar">
+      <div class="tab-item">
+        <div class="tab-icon tab-icon-active">🍷</div>
+        <div class="tab-label tab-label-active">Cellar</div>
+      </div>
+      <div class="tab-item">
+        <div class="tab-icon">📓</div>
+        <div class="tab-label">Journal</div>
+      </div>
+      <div class="scan-btn">📷</div>
+      <div class="tab-item">
+        <div class="tab-icon">✨</div>
+        <div class="tab-label">Discover</div>
+      </div>
+      <div class="tab-item">
+        <div class="tab-icon">⋯</div>
+        <div class="tab-label">More</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANNOTATIONS -->
+  <div class="annotations">
+
+    <div class="commitment">
+      <div class="title">iOS 26 Liquid Glass</div>
+      <div class="body">Apple's design language for 2026. Translucent materials, real-time blur, organic layering. This is what iOS developers build to right now — and it perfectly fits a wine app's warmth.</div>
+    </div>
+
+    <div class="ann-group">
+      <div class="ann-tag">Background</div>
+      <div class="ann-body">Warm cream gradient with a <strong>subtle garnet blush</strong> at the top — like light through a wine glass. Not white, not dark. Feels alive.</div>
+    </div>
+
+    <div class="ann-group">
+      <div class="ann-tag">Cards</div>
+      <div class="ann-body"><strong>Frosted glass</strong> with backdrop blur. Each card is translucent — the warm background bleeds through. Elevated cards get more opacity and stronger shadow.</div>
+    </div>
+
+    <div class="ann-group">
+      <div class="ann-tag">Typography</div>
+      <div class="ann-body"><strong>SF Pro Display</strong> for vintage years — ultra-thin weight, enormous, in garnet. System font — looks native and reads perfectly at any size. No custom fonts needed for premium.</div>
+    </div>
+
+    <div class="ann-group">
+      <div class="ann-tag">Tab Bar</div>
+      <div class="ann-body">Liquid glass tab bar — transparent blur over whatever's beneath it. Garnet scanner button floats above with a white ring halo. Exactly what iOS 26 tab bars look like natively.</div>
+    </div>
+
+    <div class="ann-group">
+      <div class="ann-tag">Drinking Window</div>
+      <div class="ann-body">Small dot, top-right of every card. <strong>Green</strong> = peak now. <strong>Gold</strong> = approaching. <strong>Muted</strong> = hold. Glanceable without cluttering the card.</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

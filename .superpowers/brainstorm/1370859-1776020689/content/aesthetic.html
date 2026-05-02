@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a1a1a; font-family: -apple-system, sans-serif; padding: 24px; color: #fff; }
+  h2 { font-size: 18px; font-weight: 500; margin-bottom: 6px; color: #fff; }
+  .subtitle { font-size: 13px; color: #888; margin-bottom: 28px; }
+
+  .phones { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+
+  .phone-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; cursor: pointer; }
+  .phone-wrap .label { font-size: 13px; color: #999; text-align: center; max-width: 180px; line-height: 1.4; }
+  .phone-wrap .tag { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #666; }
+
+  .phone-wrap.selected .phone { outline: 2px solid #c9a84c; outline-offset: 4px; }
+  .phone-wrap.selected .tag { color: #c9a84c; }
+
+  .phone {
+    width: 180px;
+    height: 360px;
+    border-radius: 36px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  }
+
+  /* === OPTION A: Frosted glass, warm ivory === */
+  .phone-a {
+    background: linear-gradient(160deg, #f5ede0 0%, #ede0cc 100%);
+  }
+  .phone-a .status { height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; }
+  .phone-a .status span { font-size: 10px; color: #6b5c48; font-weight: 600; }
+  .phone-a .header { padding: 6px 18px 14px; }
+  .phone-a .header .title { font-size: 26px; font-weight: 300; color: #2a1f14; letter-spacing: -0.5px; font-style: italic; }
+  .phone-a .header .sub { font-size: 11px; color: #8b7a66; letter-spacing: 0.5px; margin-top: 2px; }
+  .phone-a .filters { display: flex; gap: 6px; padding: 0 18px 14px; }
+  .phone-a .chip { background: rgba(255,255,255,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(139,98,60,0.2); border-radius: 20px; padding: 4px 10px; font-size: 10px; color: #5a4030; }
+  .phone-a .chip.active { background: #6b3a2a; color: #f5ede0; border-color: transparent; }
+  .phone-a .card { margin: 0 14px 10px; background: rgba(255,255,255,0.55); backdrop-filter: blur(16px); border-radius: 18px; padding: 14px; border: 1px solid rgba(255,255,255,0.8); }
+  .phone-a .card .vintage { font-size: 22px; font-weight: 200; color: #8b1a2e; letter-spacing: -1px; }
+  .phone-a .card .name { font-size: 12px; color: #2a1f14; font-weight: 500; margin: 2px 0; }
+  .phone-a .card .region { font-size: 10px; color: #8b7a66; }
+  .phone-a .card .bar { height: 2px; background: linear-gradient(90deg, #8b1a2e 70%, rgba(139,26,46,0.15) 70%); border-radius: 2px; margin-top: 10px; }
+  .phone-a .card2 { margin: 0 14px 10px; background: rgba(255,255,255,0.35); backdrop-filter: blur(16px); border-radius: 18px; padding: 14px; border: 1px solid rgba(255,255,255,0.6); }
+  .phone-a .tab { position: absolute; bottom: 0; left: 0; right: 0; height: 64px; background: rgba(245,237,224,0.7); backdrop-filter: blur(20px); border-top: 1px solid rgba(139,98,60,0.15); display: flex; align-items: center; justify-content: space-around; padding-bottom: 10px; }
+  .phone-a .tab-item { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .phone-a .tab-item .dot { width: 22px; height: 22px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .phone-a .tab-item .dot.active { background: #6b3a2a; }
+  .phone-a .tab-item span { font-size: 9px; color: #8b7a66; }
+  .phone-a .tab-item span.active { color: #6b3a2a; font-weight: 600; }
+  .phone-a .scan-btn { width: 36px; height: 36px; border-radius: 50%; background: #8b1a2e; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(139,26,46,0.4); font-size: 16px; }
+
+  /* === OPTION B: True glass — dark, translucent === */
+  .phone-b {
+    background: linear-gradient(135deg, #0f1923 0%, #1a2535 50%, #0f1620 100%);
+  }
+  .phone-b::before {
+    content: '';
+    position: absolute;
+    top: 60px; left: -20px; right: -20px; bottom: 40%;
+    background: radial-gradient(ellipse, rgba(139,26,46,0.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .phone-b .status { height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; }
+  .phone-b .status span { font-size: 10px; color: rgba(255,255,255,0.5); font-weight: 600; }
+  .phone-b .header { padding: 6px 18px 14px; }
+  .phone-b .header .title { font-size: 26px; font-weight: 200; color: #fff; letter-spacing: -0.5px; font-style: italic; }
+  .phone-b .header .sub { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px; margin-top: 2px; }
+  .phone-b .filters { display: flex; gap: 6px; padding: 0 18px 14px; }
+  .phone-b .chip { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 4px 10px; font-size: 10px; color: rgba(255,255,255,0.6); }
+  .phone-b .chip.active { background: rgba(139,26,46,0.6); color: #fff; border-color: rgba(139,26,46,0.4); }
+  .phone-b .card { margin: 0 14px 10px; background: rgba(255,255,255,0.07); backdrop-filter: blur(20px); border-radius: 18px; padding: 14px; border: 1px solid rgba(255,255,255,0.1); }
+  .phone-b .card .vintage { font-size: 22px; font-weight: 200; color: #c9a84c; letter-spacing: -1px; }
+  .phone-b .card .name { font-size: 12px; color: rgba(255,255,255,0.9); font-weight: 400; margin: 2px 0; }
+  .phone-b .card .region { font-size: 10px; color: rgba(255,255,255,0.4); }
+  .phone-b .card .bar { height: 1px; background: linear-gradient(90deg, rgba(201,168,76,0.6) 60%, rgba(201,168,76,0.1) 60%); margin-top: 10px; }
+  .phone-b .card2 { margin: 0 14px 10px; background: rgba(255,255,255,0.04); backdrop-filter: blur(20px); border-radius: 18px; padding: 14px; border: 1px solid rgba(255,255,255,0.06); }
+  .phone-b .tab { position: absolute; bottom: 0; left: 0; right: 0; height: 64px; background: rgba(15,25,35,0.85); backdrop-filter: blur(20px); border-top: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: space-around; padding-bottom: 10px; }
+  .phone-b .tab-item { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .phone-b .tab-item .dot { width: 22px; height: 22px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .phone-b .tab-item .dot.active { background: rgba(139,26,46,0.5); }
+  .phone-b .tab-item span { font-size: 9px; color: rgba(255,255,255,0.3); }
+  .phone-b .tab-item span.active { color: #c9a84c; font-weight: 600; }
+  .phone-b .scan-btn { width: 36px; height: 36px; border-radius: 50%; background: #8b1a2e; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(139,26,46,0.5); font-size: 16px; }
+
+  /* === OPTION C: Warm stone — organic, matte === */
+  .phone-c {
+    background: linear-gradient(170deg, #f0e8dc 0%, #e8dcc8 60%, #ddd0b8 100%);
+  }
+  .phone-c .status { height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; }
+  .phone-c .status span { font-size: 10px; color: #5a4e3c; font-weight: 600; }
+  .phone-c .header { padding: 6px 18px 16px; }
+  .phone-c .header .title { font-size: 28px; font-weight: 700; color: #1a1208; letter-spacing: -1px; }
+  .phone-c .header .sub { font-size: 11px; color: #8a7a62; letter-spacing: 0.3px; margin-top: 2px; }
+  .phone-c .filters { display: flex; gap: 6px; padding: 0 18px 14px; }
+  .phone-c .chip { background: rgba(90,60,30,0.1); border: none; border-radius: 20px; padding: 5px 11px; font-size: 10px; color: #5a3c1e; font-weight: 500; }
+  .phone-c .chip.active { background: #3d2010; color: #f0e8dc; }
+  .phone-c .card { margin: 0 14px 8px; background: rgba(255,252,246,0.7); border-radius: 16px; padding: 14px; border: none; box-shadow: 0 2px 12px rgba(60,30,10,0.08); }
+  .phone-c .card .vintage { font-size: 22px; font-weight: 800; color: #3d2010; letter-spacing: -1px; }
+  .phone-c .card .name { font-size: 12px; color: #1a1208; font-weight: 500; margin: 2px 0; }
+  .phone-c .card .region { font-size: 10px; color: #8a7a62; }
+  .phone-c .card .bar { height: 3px; background: linear-gradient(90deg, #8b1a2e 75%, rgba(139,26,46,0.15) 75%); border-radius: 2px; margin-top: 10px; }
+  .phone-c .card2 { margin: 0 14px 8px; background: rgba(255,252,246,0.45); border-radius: 16px; padding: 14px; box-shadow: 0 1px 6px rgba(60,30,10,0.05); }
+  .phone-c .tab { position: absolute; bottom: 0; left: 0; right: 0; height: 64px; background: rgba(240,232,220,0.92); border-top: 1px solid rgba(90,60,30,0.12); display: flex; align-items: center; justify-content: space-around; padding-bottom: 10px; }
+  .phone-c .tab-item { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .phone-c .tab-item .dot { width: 22px; height: 22px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .phone-c .tab-item .dot.active { background: #3d2010; }
+  .phone-c .tab-item span { font-size: 9px; color: #8a7a62; }
+  .phone-c .tab-item span.active { color: #3d2010; font-weight: 700; }
+  .phone-c .scan-btn { width: 36px; height: 36px; border-radius: 50%; background: #8b1a2e; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(139,26,46,0.35); font-size: 16px; }
+
+  .phone-wrap:hover .phone { transform: translateY(-2px); transition: transform 0.2s; }
+</style>
+<script>
+  function select(el) {
+    document.querySelectorAll('.phone-wrap').forEach(w => w.classList.remove('selected'));
+    el.classList.add('selected');
+    const choice = el.dataset.choice;
+    const text = el.querySelector('.tag').textContent;
+    if (window.recordSelection) recordSelection(choice, text);
+  }
+</script>
+</head>
+<body>
+
+<h2>iOS Aesthetic Direction</h2>
+<p class="subtitle">Three takes on "minimalistic but organic, polished for iOS" — all using Cru's garnet accent</p>
+
+<div class="phones">
+
+  <!-- OPTION A: Frosted Parchment -->
+  <div class="phone-wrap" data-choice="A" onclick="select(this)">
+    <div class="tag">Option A</div>
+    <div class="phone phone-a">
+      <div class="status"><span>9:41</span><span>●●●</span></div>
+      <div class="header">
+        <div class="title">My Cellar</div>
+        <div class="sub">47 bottles · 12 regions</div>
+      </div>
+      <div class="filters">
+        <div class="chip active">All</div>
+        <div class="chip">Burgundy</div>
+        <div class="chip">Bordeaux</div>
+      </div>
+      <div class="card">
+        <div class="vintage">2015</div>
+        <div class="name">Chambertin Grand Cru</div>
+        <div class="region">Domaine Rousseau · Burgundy</div>
+        <div class="bar"></div>
+      </div>
+      <div class="card card2">
+        <div class="vintage">2018</div>
+        <div class="name">Pichon Baron</div>
+        <div class="region">Château Pichon Baron · Pauillac</div>
+        <div class="bar"></div>
+      </div>
+      <div class="tab">
+        <div class="tab-item"><div class="dot active">🍷</div><span class="active">Cellar</span></div>
+        <div class="tab-item"><div class="dot">📓</div><span>Journal</span></div>
+        <div class="scan-btn">📷</div>
+        <div class="tab-item"><div class="dot">✨</div><span>Discover</span></div>
+        <div class="tab-item"><div class="dot">⋯</div><span>More</span></div>
+      </div>
+    </div>
+    <div class="label">Frosted Parchment — warm ivory with glass-blur cards. Feels like iOS but with a cellar ledger warmth.</div>
+  </div>
+
+  <!-- OPTION B: Dark Glass -->
+  <div class="phone-wrap" data-choice="B" onclick="select(this)">
+    <div class="tag">Option B</div>
+    <div class="phone phone-b">
+      <div class="status"><span>9:41</span><span>●●●</span></div>
+      <div class="header">
+        <div class="title">My Cellar</div>
+        <div class="sub">47 bottles · 12 regions</div>
+      </div>
+      <div class="filters">
+        <div class="chip active">All</div>
+        <div class="chip">Burgundy</div>
+        <div class="chip">Bordeaux</div>
+      </div>
+      <div class="card">
+        <div class="vintage">2015</div>
+        <div class="name">Chambertin Grand Cru</div>
+        <div class="region">Domaine Rousseau · Burgundy</div>
+        <div class="bar"></div>
+      </div>
+      <div class="card card2">
+        <div class="vintage">2018</div>
+        <div class="name">Pichon Baron</div>
+        <div class="region">Château Pichon Baron · Pauillac</div>
+        <div class="bar"></div>
+      </div>
+      <div class="tab">
+        <div class="tab-item"><div class="dot active">🍷</div><span class="active">Cellar</span></div>
+        <div class="tab-item"><div class="dot">📓</div><span>Journal</span></div>
+        <div class="scan-btn">📷</div>
+        <div class="tab-item"><div class="dot">✨</div><span>Discover</span></div>
+        <div class="tab-item"><div class="dot">⋯</div><span>More</span></div>
+      </div>
+    </div>
+    <div class="label">Dark Glass — deep navy/obsidian with translucent cards. Matches the web app's dark cellar tone on mobile.</div>
+  </div>
+
+  <!-- OPTION C: Warm Stone -->
+  <div class="phone-wrap" data-choice="C" onclick="select(this)">
+    <div class="tag">Option C</div>
+    <div class="phone phone-c">
+      <div class="status"><span>9:41</span><span>●●●</span></div>
+      <div class="header">
+        <div class="title">My Cellar</div>
+        <div class="sub">47 bottles · 12 regions</div>
+      </div>
+      <div class="filters">
+        <div class="chip active">All</div>
+        <div class="chip">Burgundy</div>
+        <div class="chip">Bordeaux</div>
+      </div>
+      <div class="card">
+        <div class="vintage">2015</div>
+        <div class="name">Chambertin Grand Cru</div>
+        <div class="region">Domaine Rousseau · Burgundy</div>
+        <div class="bar"></div>
+      </div>
+      <div class="card card2">
+        <div class="vintage">2018</div>
+        <div class="name">Pichon Baron</div>
+        <div class="region">Château Pichon Baron · Pauillac</div>
+        <div class="bar"></div>
+      </div>
+      <div class="tab">
+        <div class="tab-item"><div class="dot active">🍷</div><span class="active">Cellar</span></div>
+        <div class="tab-item"><div class="dot">📓</div><span>Journal</span></div>
+        <div class="scan-btn">📷</div>
+        <div class="tab-item"><div class="dot">✨</div><span>Discover</span></div>
+        <div class="tab-item"><div class="dot">⋯</div><span>More</span></div>
+      </div>
+    </div>
+    <div class="label">Warm Stone — matte linen/sand tones, no blur effects. Organic and tactile, like uncoated paper stock.</div>
+  </div>
+
+</div>
+
+</body>
+</html>

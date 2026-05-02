@@ -1,0 +1,552 @@
+[
+  {
+    "name": "Pinot Noir",
+    "synonyms": ["Spätburgunder", "Blauburgunder", "Pinot Nero", "Burgunder"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Burgundy",
+    "typical_aromas": ["red cherry", "raspberry", "strawberry", "violet", "earth", "mushroom", "forest floor", "sous-bois"],
+    "typical_style": "Light-medium body, high acidity, low-medium tannin, high perfume. Extraordinary transparency to terroir.",
+    "classic_regions": ["Burgundy", "Champagne", "Willamette Valley", "Sonoma Coast", "Central Otago", "Baden"]
+  },
+  {
+    "name": "Cabernet Sauvignon",
+    "synonyms": ["Cab Sauv", "CS"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Bordeaux",
+    "typical_aromas": ["blackcurrant", "black cherry", "cedar", "graphite", "tobacco", "green bell pepper", "eucalyptus", "cigar box"],
+    "typical_style": "Full body, high tannin, high acidity. Demands aging. The world's most widely planted noble red variety.",
+    "classic_regions": ["Pauillac", "Napa Valley", "Coonawarra", "Maipo Valley", "Margaret River"]
+  },
+  {
+    "name": "Merlot",
+    "synonyms": ["Merlau"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Bordeaux",
+    "typical_aromas": ["plum", "black cherry", "chocolate", "coffee", "mocha", "dried herbs", "tobacco"],
+    "typical_style": "Medium-full body, medium tannin, medium-high acidity. Softer and fleshier than Cabernet Sauvignon. Key blending partner.",
+    "classic_regions": ["Pomerol", "Saint-Émilion", "Washington State", "Napa Valley"]
+  },
+  {
+    "name": "Chardonnay",
+    "synonyms": ["Pinot Chardonnay", "Morillon", "Weißer Burgunder"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Burgundy",
+    "typical_aromas": ["green apple", "lemon", "pear", "peach", "toast", "butter", "cream", "hazelnut", "mineral"],
+    "typical_style": "Neutral variety that reflects winemaking and terroir. Can range from lean, mineral, and unoaked (Chablis) to rich, creamy, and oaky (Napa, Meursault).",
+    "classic_regions": ["Burgundy", "Champagne", "Chablis", "Napa Valley", "Margaret River", "Yarra Valley"]
+  },
+  {
+    "name": "Riesling",
+    "synonyms": ["Rheinriesling", "Johannisberger Riesling", "White Riesling"],
+    "color": "white",
+    "origin_country": "Germany",
+    "origin_region": "Mosel",
+    "typical_aromas": ["lime", "lemon", "green apple", "apricot", "petrol", "slate", "ginger", "beeswax", "honey"],
+    "typical_style": "High acidity across all sweetness levels, from bone-dry to lusciously sweet. Ages magnificently. The world's most transparent variety to soil type.",
+    "classic_regions": ["Mosel", "Rheingau", "Alsace", "Clare Valley", "Eden Valley", "Finger Lakes"]
+  },
+  {
+    "name": "Sauvignon Blanc",
+    "synonyms": ["Fumé Blanc", "Muskat-Silvaner"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Loire Valley",
+    "typical_aromas": ["grapefruit", "passion fruit", "cut grass", "green bell pepper", "white currant", "elderflower", "gooseberry", "struck flint"],
+    "typical_style": "High acidity, medium body, dry. Two styles: Loire (mineral, herbaceous) vs New World (tropical, exuberant). Best without oak or with brief neutral oak.",
+    "classic_regions": ["Sancerre", "Pouilly-Fumé", "Marlborough", "Bordeaux (Graves white)"]
+  },
+  {
+    "name": "Syrah",
+    "synonyms": ["Shiraz", "Petite Syrah (not same variety)", "Hermitage"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Northern Rhône",
+    "typical_aromas": ["black olive", "blackberry", "cracked black pepper", "smoked meat", "violets", "leather", "licorice", "iron"],
+    "typical_style": "Full body, high tannin, medium-high acidity. Northern Rhône (Syrah): precise, peppery, garrigue. Australian Shiraz: rich, chocolate-forward, warm-climate amplitude.",
+    "classic_regions": ["Hermitage", "Côte-Rôtie", "Barossa Valley", "McLaren Vale", "Heathcote", "Washington State"]
+  },
+  {
+    "name": "Grenache",
+    "synonyms": ["Garnacha", "Cannonau", "Grenache Noir"],
+    "color": "red",
+    "origin_country": "Spain",
+    "origin_region": "Aragón",
+    "typical_aromas": ["red cherry", "strawberry jam", "dried herbs", "white pepper", "leather", "orange peel", "dried rose"],
+    "typical_style": "Medium-full body, low-medium tannin, low acidity, high alcohol. Oxidizes rapidly. Foundational Châteauneuf-du-Pape grape. Ages magnificently in Priorat and old-vine Barossa.",
+    "classic_regions": ["Châteauneuf-du-Pape", "Priorat", "Sardinia (Cannonau)", "Barossa Valley", "Rioja"]
+  },
+  {
+    "name": "Tempranillo",
+    "synonyms": ["Tinta Roriz", "Aragonez", "Tinto Fino", "Tinta del País", "Cencibel", "Ull de Llebre"],
+    "color": "red",
+    "origin_country": "Spain",
+    "origin_region": "Rioja",
+    "typical_aromas": ["dried cherry", "plum", "leather", "tobacco", "dried herbs", "vanilla", "cedar", "earth"],
+    "typical_style": "Medium-full body, medium-high tannin, medium acidity. Spain's most versatile red — can produce everything from young, fruity wines to grand reserve-aged classics.",
+    "classic_regions": ["Rioja", "Ribera del Duero", "Douro (as Tinta Roriz)", "Toro", "Navarra"]
+  },
+  {
+    "name": "Sangiovese",
+    "synonyms": ["Brunello", "Prugnolo Gentile", "Morellino", "Nielluccio"],
+    "color": "red",
+    "origin_country": "Italy",
+    "origin_region": "Tuscany",
+    "typical_aromas": ["dried cherry", "tomato", "leather", "dried herbs", "tobacco", "iron", "earth", "dried rose"],
+    "typical_style": "High acidity, firm tannin, medium-full body. The backbone of Chianti, Brunello, and Vino Nobile. Extraordinary food versatility. Ages exceptionally well.",
+    "classic_regions": ["Chianti Classico", "Brunello di Montalcino", "Vino Nobile di Montepulciano", "Morellino di Scansano"]
+  },
+  {
+    "name": "Nebbiolo",
+    "synonyms": ["Spanna", "Chiavennasca", "Picoutener"],
+    "color": "red",
+    "origin_country": "Italy",
+    "origin_region": "Piedmont",
+    "typical_aromas": ["tar", "roses", "dried cherry", "violet", "leather", "tobacco", "earth", "truffle", "licorice"],
+    "typical_style": "Light ruby color paradoxically encasing enormous tannin and acidity. Requires extended aging — 15 to 30 years for Barolo's finest expressions. 'Tar and roses' is the classic shorthand.",
+    "classic_regions": ["Barolo", "Barbaresco", "Gattinara", "Ghemme", "Carema", "Valtellina"]
+  },
+  {
+    "name": "Pinot Gris",
+    "synonyms": ["Pinot Grigio", "Grauburgunder", "Rulander", "Tokay d'Alsace"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Alsace",
+    "typical_aromas": ["pear", "white peach", "ginger", "smoke", "honey", "almond", "marzipan"],
+    "typical_style": "Two dominant styles: Alsatian (rich, full, slightly off-dry, aging potential) vs Italian Pinot Grigio (crisp, light, high-volume commercial). The best Alsatian examples are world-class.",
+    "classic_regions": ["Alsace", "Oregon", "Northern Italy", "Germany (as Grauburgunder)"]
+  },
+  {
+    "name": "Gewürztraminer",
+    "synonyms": ["Traminer Aromatico", "Roter Traminer"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Alsace",
+    "typical_aromas": ["lychee", "rose petal", "ginger", "cinnamon", "mango", "Turkish delight", "jasmine"],
+    "typical_style": "Unmistakable variety: deeply aromatic, low acidity, high alcohol, rich texture. Dry versions pair with spicy food; Vendange Tardive versions achieve extraordinary complexity.",
+    "classic_regions": ["Alsace", "Südtirol/Alto Adige", "Germany", "Marlborough"]
+  },
+  {
+    "name": "Viognier",
+    "synonyms": [],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Northern Rhône",
+    "typical_aromas": ["apricot", "peach", "violet", "jasmine", "orange blossom", "mango", "ginger"],
+    "typical_style": "Rich, full-bodied, low acidity, high perfume. The vine of Condrieu and Château-Grillet. Co-fermented with Syrah in Côte-Rôtie to add perfume and stabilize color. Best drunk young.",
+    "classic_regions": ["Condrieu", "Château-Grillet", "Côte-Rôtie (co-fermented)", "Virginia", "McLaren Vale"]
+  },
+  {
+    "name": "Chenin Blanc",
+    "synonyms": ["Steen", "Pineau de la Loire"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Loire Valley",
+    "typical_aromas": ["quince", "green apple", "honey", "beeswax", "chamomile", "ginger", "wet wool", "lanolin"],
+    "typical_style": "Extraordinary versatility: bone-dry mineral (Savennières) through off-dry (Vouvray demi-sec) to dessert (Coteaux du Layon Sélection). Legendary aging potential. South Africa produces outstanding modern expressions.",
+    "classic_regions": ["Vouvray", "Savennières", "Saumur", "Montlouis", "Stellenbosch", "Swartland"]
+  },
+  {
+    "name": "Sémillon",
+    "synonyms": ["Semillon"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Bordeaux",
+    "typical_aromas": ["lanolin", "beeswax", "lemon curd", "green fig", "honey", "toast", "marmalade"],
+    "typical_style": "Low acidity, waxy texture, susceptible to noble rot. In Sauternes the key variety. Hunter Valley Sémillon is a benchmark for dry aging: starting austere and lemon-sharp, developing into complex, toasty, honeyed wines over 10–20 years.",
+    "classic_regions": ["Sauternes", "Graves (white Bordeaux)", "Hunter Valley", "Margaret River"]
+  },
+  {
+    "name": "Muscat Blanc à Petits Grains",
+    "synonyms": ["Moscato Bianco", "Muscat Blanc", "Muscat Canelli", "Muscat d'Alsace"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Alsace",
+    "typical_aromas": ["orange blossom", "rose", "grape", "peach", "lychee", "musk"],
+    "typical_style": "The finest Muscat variety — the only one that smells and tastes of fresh grapes. Made dry in Alsace; as Asti Spumante (DOCG) or Moscato d'Asti (DOCG) in Piedmont; as Vin Doux Naturel in southern France.",
+    "classic_regions": ["Alsace", "Asti (Piedmont)", "Muscat de Beaumes-de-Venise", "Rutherglen (as Muscat)"]
+  },
+  {
+    "name": "Zinfandel",
+    "synonyms": ["Primitivo", "Tribidrag", "Crljenak Kaštelanski"],
+    "color": "red",
+    "origin_country": "Croatia",
+    "origin_region": "Dalmatia",
+    "typical_aromas": ["blackberry jam", "blueberry", "black cherry", "dried herbs", "black pepper", "leather", "chocolate"],
+    "typical_style": "California's adopted signature red. Full body, medium-high tannin, high alcohol. Old-vine Zinfandel from Sonoma and Paso Robles produces concentrated, complex wines. Italian Primitivo is drier and earthier.",
+    "classic_regions": ["Dry Creek Valley", "Lodi", "Paso Robles", "Sonoma Valley", "Puglia (as Primitivo)"]
+  },
+  {
+    "name": "Barbera",
+    "synonyms": ["Barbera d'Asti", "Barbera d'Alba"],
+    "color": "red",
+    "origin_country": "Italy",
+    "origin_region": "Piedmont",
+    "typical_aromas": ["sour cherry", "blackberry", "plum", "dried herbs", "vanilla", "coffee"],
+    "typical_style": "High acidity, low tannin, full body. Piedmont's everyday workhorse variety that in top sites (Scarrone, Vigna Vecchia) produces genuinely impressive wine. Often oak-aged to add structure.",
+    "classic_regions": ["Barbera d'Asti", "Barbera d'Alba", "Barbera del Monferrato"]
+  },
+  {
+    "name": "Dolcetto",
+    "synonyms": ["Ormeasco", "Dolsin"],
+    "color": "red",
+    "origin_country": "Italy",
+    "origin_region": "Piedmont",
+    "typical_aromas": ["black cherry", "licorice", "almonds", "violets", "chocolate", "dried herbs"],
+    "typical_style": "Piedmont's early-drinking, food-friendly red. Low acidity, medium-full body, firm but fine tannin, bitter almond finish. At its best in Dolcetto di Dogliani. Drink within 5 years of vintage.",
+    "classic_regions": ["Dolcetto di Dogliani", "Dolcetto d'Alba", "Dolcetto d'Acqui"]
+  },
+  {
+    "name": "Montepulciano",
+    "synonyms": [],
+    "color": "red",
+    "origin_country": "Italy",
+    "origin_region": "Abruzzo",
+    "typical_aromas": ["black cherry", "plum", "dried herbs", "leather", "tobacco", "earth"],
+    "typical_style": "Medium-full body, high acidity, medium-high tannin. Not to be confused with Vino Nobile di Montepulciano (Sangiovese). Montepulciano d'Abruzzo is one of Italy's great value reds; Cerasuolo d'Abruzzo is a compelling rosé.",
+    "classic_regions": ["Montepulciano d'Abruzzo", "Rosso Conero", "Offida Rosso"]
+  },
+  {
+    "name": "Vermentino",
+    "synonyms": ["Rolle", "Pigato", "Favorita"],
+    "color": "white",
+    "origin_country": "Italy",
+    "origin_region": "Sardinia",
+    "typical_aromas": ["lemon", "lime", "white almond", "grapefruit", "fennel", "fresh herbs", "white peach"],
+    "typical_style": "Crisp, dry, medium body, medium-high acidity. Sardinia's signature white — Vermentino di Gallura DOCG is the finest expression. Also grown in Provence (as Rolle) where it blends into white Bandol and Cassis.",
+    "classic_regions": ["Vermentino di Gallura", "Vermentino di Sardegna", "Côtes de Provence (Rolle)", "Ligurian coast"]
+  },
+  {
+    "name": "Fiano",
+    "synonyms": ["Fiano di Avellino"],
+    "color": "white",
+    "origin_country": "Italy",
+    "origin_region": "Campania",
+    "typical_aromas": ["pear", "hazelnut", "honey", "white flowers", "lemon", "smoke", "toasted almonds"],
+    "typical_style": "Medium body, medium-high acidity, distinctive smoky, nutty character. One of southern Italy's finest white varieties. Fiano di Avellino DOCG ages well — 5–10 years develops toasty, honeyed complexity.",
+    "classic_regions": ["Fiano di Avellino", "Cilento", "Sicily", "Australia (emerging)"]
+  },
+  {
+    "name": "Greco di Tufo",
+    "synonyms": ["Greco"],
+    "color": "white",
+    "origin_country": "Italy",
+    "origin_region": "Campania",
+    "typical_aromas": ["peach", "apricot", "mineral", "smoke", "bitter almond", "herbs"],
+    "typical_style": "Full body, high acidity, mineral-driven. Greco di Tufo DOCG from the volcanic tufa soils around Avellino produces some of Campania's most age-worthy whites. Distinctive smoky-mineral backbone.",
+    "classic_regions": ["Greco di Tufo DOCG", "Solopaca", "Sannio"]
+  },
+  {
+    "name": "Aglianico",
+    "synonyms": ["Aglianico del Vulture", "Taurasi"],
+    "color": "red",
+    "origin_country": "Italy",
+    "origin_region": "Campania",
+    "typical_aromas": ["black cherry", "tar", "leather", "tobacco", "dark chocolate", "iron", "smoked meat"],
+    "typical_style": "The Barolo of the South. High tannin, high acidity, full body. Taurasi DOCG and Aglianico del Vulture DOCG require significant aging — 10–20 years for top expressions. Volcanic soils add an incomparable mineral backbone.",
+    "classic_regions": ["Taurasi DOCG", "Aglianico del Vulture DOCG", "Falerno del Massico"]
+  },
+  {
+    "name": "Touriga Nacional",
+    "synonyms": ["Touriga"],
+    "color": "red",
+    "origin_country": "Portugal",
+    "origin_region": "Douro Valley",
+    "typical_aromas": ["blackberry", "black cherry", "violet", "rose petal", "chocolate", "coffee", "cedar"],
+    "typical_style": "Intense, concentrated, high tannin. Portugal's finest indigenous red variety — the backbone of the greatest Vintage Ports and a standout in unfortified Douro reds. Small berries and tiny yields produce extraordinary concentration.",
+    "classic_regions": ["Douro", "Dão", "Alentejo"]
+  },
+  {
+    "name": "Garnacha Blanca",
+    "synonyms": ["Grenache Blanc"],
+    "color": "white",
+    "origin_country": "Spain",
+    "origin_region": "Aragón",
+    "typical_aromas": ["white peach", "anise", "fresh herbs", "white flowers", "almonds"],
+    "typical_style": "Full body, low acidity, medium-high alcohol. Key blending grape in Châteauneuf-du-Pape blanc and Southern Rhône whites. At its finest in old-vine Roussillon (Grenache Blanc VdN) and cool-climate Spanish sites.",
+    "classic_regions": ["Châteauneuf-du-Pape (blanc)", "Roussillon", "Priorat (white)", "Terra Alta"]
+  },
+  {
+    "name": "Albariño",
+    "synonyms": ["Alvarinho"],
+    "color": "white",
+    "origin_country": "Spain",
+    "origin_region": "Galicia",
+    "typical_aromas": ["peach", "apricot", "lemon", "grapefruit", "saline", "white flowers", "almond"],
+    "typical_style": "High acidity, medium body, dry, aromatic. Spain's most celebrated white variety from the rain-drenched Atlantic coast of Galicia. Also grown as Alvarinho in Portugal's Vinho Verde. Best drunk young and fresh.",
+    "classic_regions": ["Rías Baixas", "Vinho Verde (Monção e Melgaço)"]
+  },
+  {
+    "name": "Verdejo",
+    "synonyms": [],
+    "color": "white",
+    "origin_country": "Spain",
+    "origin_region": "Rueda",
+    "typical_aromas": ["grapefruit", "fennel", "grass", "white peach", "herbal bitterness", "almond"],
+    "typical_style": "Medium-high acidity, medium body, distinctly bitter herbal finish. Rueda's signature white variety. Often blended with Sauvignon Blanc; the finest mono-varietal versions age surprisingly well.",
+    "classic_regions": ["Rueda DO"]
+  },
+  {
+    "name": "Palomino",
+    "synonyms": ["Listán", "Pedro Ximén (different variety)"],
+    "color": "white",
+    "origin_country": "Spain",
+    "origin_region": "Jerez",
+    "typical_aromas": ["almonds", "bread dough", "dried herbs", "green apple", "brine", "saline"],
+    "typical_style": "Neutral, low-acid variety that is ideal for biological and oxidative aging. The foundation of all dry Sherry styles: Fino, Manzanilla, Amontillado, Oloroso. On its own without aging it is undistinguished.",
+    "classic_regions": ["Jerez-Xérès-Sherry", "Manzanilla-Sanlúcar de Barrameda", "Montilla-Moriles"]
+  },
+  {
+    "name": "Pedro Ximénez",
+    "synonyms": ["PX"],
+    "color": "white",
+    "origin_country": "Spain",
+    "origin_region": "Montilla",
+    "typical_aromas": ["raisin", "dried fig", "date", "molasses", "coffee", "dark chocolate", "toffee"],
+    "typical_style": "Used almost exclusively for the darkest, sweetest Sherry style: Pedro Ximénez Sherry. Grapes are sun-dried (pasificación) to extreme sugar concentrations. Viscous, almost syrupy, intensely sweet.",
+    "classic_regions": ["Jerez (PX Sherry)", "Montilla-Moriles (fortified and unfortified)"]
+  },
+  {
+    "name": "Grüner Veltliner",
+    "synonyms": ["GrüVe"],
+    "color": "white",
+    "origin_country": "Austria",
+    "origin_region": "Wachau",
+    "typical_aromas": ["white pepper", "lemon", "green herbs", "stone fruit", "mineral", "grapefruit"],
+    "typical_style": "Austria's signature white. Ranges from light, peppery, food-friendly Federspiel to powerful, mineral Smaragd. The white pepper note is diagnostic. Excellent aging potential in top Smaragd examples.",
+    "classic_regions": ["Wachau", "Kamptal", "Kremstal", "Weinviertel"]
+  },
+  {
+    "name": "Blaufränkisch",
+    "synonyms": ["Lemberger", "Kékfrankos", "Frankovka"],
+    "color": "red",
+    "origin_country": "Austria",
+    "origin_region": "Burgenland",
+    "typical_aromas": ["dark cherry", "blackberry", "black pepper", "dark chocolate", "leather", "earth"],
+    "typical_style": "Medium-full body, high acidity, medium-high tannin. Austria's finest red variety — shows remarkable terroir expression in Burgenland's different sub-regions. Ages beautifully for 10–20 years.",
+    "classic_regions": ["Mittelburgenland DAC", "Leithaberg DAC", "Washington State (as Lemberger)"]
+  },
+  {
+    "name": "Zweigelt",
+    "synonyms": ["Rotburger"],
+    "color": "red",
+    "origin_country": "Austria",
+    "origin_region": "Burgenland",
+    "typical_aromas": ["cherry", "blackberry", "dark plum", "chocolate", "dried herbs"],
+    "typical_style": "Austria's most widely planted red — a crossing of Blaufränkisch and St. Laurent. Softer, more approachable than Blaufränkisch. Best examples from Neusiedlersee and Kremstal.",
+    "classic_regions": ["Neusiedlersee", "Kremstal", "Lower Austria broadly"]
+  },
+  {
+    "name": "Malbec",
+    "synonyms": ["Côt", "Auxerrois", "Pressac"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Cahors",
+    "typical_aromas": ["blackberry", "black plum", "violet", "chocolate", "leather", "tobacco", "oak spice"],
+    "typical_style": "Argentina transformed Malbec from Bordeaux blending grape into a world-class varietal. Full body, plush tannin, high alcohol. Mendoza's high altitude Malbec (1000–1500m) is the modern benchmark. Cahors in France produces a leaner, earthier, more tannic style.",
+    "classic_regions": ["Mendoza", "Cahors", "Patagonia", "Bordeaux (blending)"]
+  },
+  {
+    "name": "Carménère",
+    "synonyms": ["Grand Vidure"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Bordeaux",
+    "typical_aromas": ["red plum", "black cherry", "green bell pepper", "chocolate", "tobacco", "dried herbs", "coffee"],
+    "typical_style": "Chile's signature red variety, brought from Bordeaux pre-phylloxera and long confused with Merlot. At its best: full body, silky tannin, complex green herb and dark fruit interplay. Misidentified as Merlot in Chile for decades.",
+    "classic_regions": ["Colchagua Valley", "Maipo Valley", "Cachapoal Valley"]
+  },
+  {
+    "name": "Tannat",
+    "synonyms": [],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Madiran",
+    "typical_aromas": ["blackberry", "black cherry", "tobacco", "leather", "dark chocolate", "iron", "pepper"],
+    "typical_style": "Extraordinary tannin levels — one of the world's most tannic varieties. Madiran traditionally required micro-oxygenation or Cabernet blending to soften. Uruguay adopted Tannat as a national variety, producing more approachable expressions.",
+    "classic_regions": ["Madiran", "Uruguay (Canelones)", "Irouléguy"]
+  },
+  {
+    "name": "Mourvèdre",
+    "synonyms": ["Monastrell", "Mataro", "Clos Mourvèdre"],
+    "color": "red",
+    "origin_country": "Spain",
+    "origin_region": "Murcia",
+    "typical_aromas": ["blackberry", "leather", "game", "smoked meat", "iron", "black olive", "garrigue"],
+    "typical_style": "Late-ripening, heat-demanding variety. The backbone of Bandol (Provence). Dark, powerful, gamey, with high tannin. As Monastrell in Spain (Jumilla, Yecla) it produces dense, concentrated reds. Co-blended in Châteauneuf-du-Pape.",
+    "classic_regions": ["Bandol", "Châteauneuf-du-Pape", "Jumilla", "Yecla", "McLaren Vale"]
+  },
+  {
+    "name": "Roussanne",
+    "synonyms": ["Bergeron"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Northern Rhône",
+    "typical_aromas": ["peach blossom", "herbal tea", "honey", "beeswax", "pear", "white flowers", "apricot"],
+    "typical_style": "The finer, more delicate Rhône white variety (compared to Marsanne). Full body, medium-high acidity, excellent aging potential. Blended with Marsanne in Crozes-Hermitage blanc, Hermitage blanc, and St-Péray.",
+    "classic_regions": ["Hermitage (blanc)", "Châteauneuf-du-Pape (blanc)", "Crozes-Hermitage (blanc)", "Savoie (as Bergeron)"]
+  },
+  {
+    "name": "Marsanne",
+    "synonyms": [],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Northern Rhône",
+    "typical_aromas": ["peach", "apricot", "almond", "marzipan", "beeswax", "white flowers"],
+    "typical_style": "Full body, low acidity, broad texture. Matures slowly — awkward at 5–10 years but stunning at 15–25. The dominant variety in Hermitage blanc. Also successful in Australia (Tahbilk Marsanne is a benchmark for longevity).",
+    "classic_regions": ["Hermitage (blanc)", "Crozes-Hermitage", "St-Péray", "Goulburn Valley (Tahbilk)"]
+  },
+  {
+    "name": "Melon de Bourgogne",
+    "synonyms": ["Muscadet", "Melon"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Loire Valley",
+    "typical_aromas": ["lemon", "green apple", "saline", "oyster shell", "bread dough", "chalk"],
+    "typical_style": "Neutral, high acid variety that achieves its best expression through extended lees aging (sur lie). Muscadet Sèvre et Maine sur Lie can develop extraordinary complexity. Criminally underrated and underpurchased.",
+    "classic_regions": ["Muscadet Sèvre et Maine", "Muscadet sur Lie"]
+  },
+  {
+    "name": "Gamay",
+    "synonyms": ["Gamay Noir"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Burgundy",
+    "typical_aromas": ["red cherry", "raspberry", "strawberry", "banana (carbonic)", "violet", "fresh herbs"],
+    "typical_style": "Light body, high acidity, low tannin, red fruit driven. The grape of Beaujolais. Ten crus of Beaujolais (Morgon, Moulin-à-Vent, Fleurie, etc.) produce serious, age-worthy wines from granite soils. Carbonic maceration produces the lighter, banana-fruity Nouveau style.",
+    "classic_regions": ["Beaujolais (all 10 crus)", "Touraine", "Mâcon (minor)"]
+  },
+  {
+    "name": "Trousseau",
+    "synonyms": ["Bastardo", "Merenzao"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Jura",
+    "typical_aromas": ["red cherry", "plum", "pepper", "iron", "earth", "dried flowers"],
+    "typical_style": "Light-medium body, high acidity, medium tannin. A specialty of the Jura — Trousseau produces perfumed, mineral reds from specific clay-limestone soils. Also grown as Bastardo in Portugal's Douro and Dão.",
+    "classic_regions": ["Arbois (Jura)", "Douro (as Bastardo)", "Dão"]
+  },
+  {
+    "name": "Poulsard",
+    "synonyms": ["Plousard"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Jura",
+    "typical_aromas": ["red cherry", "rose", "dried herbs", "orange peel", "earth"],
+    "typical_style": "Palest red wine grape in France — often approaching a deep rosé in color due to thin skins. Low tannin, high acidity, delicate. The Jura's most fragile and enchanting red variety. Must be tried from Overnoy, Ganevat, or Bornard.",
+    "classic_regions": ["Arbois-Pupillin (Jura)"]
+  },
+  {
+    "name": "Petit Verdot",
+    "synonyms": [],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Bordeaux",
+    "typical_aromas": ["blackberry", "violet", "pencil shavings", "slate", "dark chocolate", "tobacco"],
+    "typical_style": "Dense, inky, high tannin, high acidity, intense color. Used in small percentages in Bordeaux blends for structure, color, and longevity. Rarely bottled as a varietal in Bordeaux; interesting solo expressions from Napa Valley and Australia.",
+    "classic_regions": ["Bordeaux (blending)", "Napa Valley", "Barossa Valley"]
+  },
+  {
+    "name": "Cabernet Franc",
+    "synonyms": ["Bouchet", "Breton"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Bordeaux",
+    "typical_aromas": ["red cherry", "raspberry", "violet", "graphite", "green herbs", "cedar", "tomato leaf"],
+    "typical_style": "Medium body, medium-high acidity, medium tannin. More aromatic and lighter than Cabernet Sauvignon. The king of the Loire (Chinon, Saumur-Champigny) and Cheval Blanc's foundation. Increasingly bottled as a varietal in Napa and Ontario.",
+    "classic_regions": ["Chinon", "Saumur-Champigny", "Saint-Émilion (Cheval Blanc)", "Friuli", "Napa Valley"]
+  },
+  {
+    "name": "Cinsaut",
+    "synonyms": ["Cinsault", "Ottavianello"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Southern Rhône",
+    "typical_aromas": ["red cherry", "strawberry", "pepper", "lavender", "dried flowers"],
+    "typical_style": "Light-medium body, high acidity, low tannin. A blending variety in southern Rhône and Provence rosé. Old-vine Cinsaut from South Africa and Lebanon produces surprisingly complex, perfumed wines. One parent of Pinotage (with Pinot Noir).",
+    "classic_regions": ["Châteauneuf-du-Pape (minor)", "Provence (rosé)", "South Africa (Swartland old vines)", "Lebanon"]
+  },
+  {
+    "name": "Carignan",
+    "synonyms": ["Cariñena", "Mazuelo", "Morastell"],
+    "color": "red",
+    "origin_country": "Spain",
+    "origin_region": "Cariñena",
+    "typical_aromas": ["black cherry", "plum", "earth", "pepper", "dried herbs", "leather"],
+    "typical_style": "High acidity, high tannin, full body. Once the workhouse of Languedoc — now recognized as a variety producing extraordinary old-vine wines from schist slopes in Priorat (as Samsó), Roussillon, and Sardinia (as Carignano).",
+    "classic_regions": ["Priorat (as Samsó)", "Roussillon", "Corbières", "Minervois", "Sardinia (Carignano del Sulcis)"]
+  },
+  {
+    "name": "Grenache Blanc",
+    "synonyms": ["Garnacha Blanca"],
+    "color": "white",
+    "origin_country": "Spain",
+    "origin_region": "Aragón",
+    "typical_aromas": ["white peach", "anise", "herbs", "almond", "honeydew"],
+    "typical_style": "Full body, low acidity, high alcohol potential. Blending partner in white Châteauneuf-du-Pape and Southern Rhône whites. Old-vine expressions from Roussillon produce complex, mineral whites.",
+    "classic_regions": ["Châteauneuf-du-Pape blanc", "Roussillon", "Terra Alta", "Priorat"]
+  },
+  {
+    "name": "Picpoul",
+    "synonyms": ["Piquepoul", "Folle Blanche (not same)"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Languedoc",
+    "typical_aromas": ["lemon", "lime", "green apple", "white flowers", "saline"],
+    "typical_style": "High acidity, light body, bone dry, mineral. Picpoul de Pinet is the classic expression — a versatile, fresh white from Languedoc. Named 'lip stinger' for its acidity. Best with oysters and seafood.",
+    "classic_regions": ["Picpoul de Pinet", "Languedoc-Roussillon (blending)"]
+  },
+  {
+    "name": "Bourboulenc",
+    "synonyms": ["Doucillon"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Southern Rhône",
+    "typical_aromas": ["lemon", "white flowers", "almonds", "fresh herbs"],
+    "typical_style": "Light-medium body, high acidity, low alcohol. A blending variety in white Châteauneuf-du-Pape and Languedoc whites, contributing freshness and structure. Rarely bottled as a varietal.",
+    "classic_regions": ["Châteauneuf-du-Pape blanc", "La Clape", "Languedoc"]
+  },
+  {
+    "name": "Ugni Blanc",
+    "synonyms": ["Trebbiano Toscano", "Trebbiano"],
+    "color": "white",
+    "origin_country": "Italy",
+    "origin_region": "Tuscany",
+    "typical_aromas": ["lemon", "green apple", "neutral", "light floral"],
+    "typical_style": "High acidity, neutral flavor profile, light body. The world's most planted white grape — overwhelmingly grown for Cognac and Armagnac distillation (as St-Émilion du Cognac and Folle Blanche). As Trebbiano d'Abruzzo, legendary old-vine bottlings from Valentini defy the variety's reputation.",
+    "classic_regions": ["Cognac base wine", "Trebbiano d'Abruzzo (exceptional from Valentini)", "Soave (blending)"]
+  },
+  {
+    "name": "Counoise",
+    "synonyms": [],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Southern Rhône",
+    "typical_aromas": ["red cherry", "strawberry", "pepper", "dried herbs"],
+    "typical_style": "Light-medium body, high acidity, low tannin. A minor blending variety permitted in Châteauneuf-du-Pape. Used by Château Rayas and Château Beaucastel for its freshness and aromatic lift.",
+    "classic_regions": ["Châteauneuf-du-Pape (minor blending)"]
+  },
+  {
+    "name": "Clairette",
+    "synonyms": ["Clairette Blanche", "Clairette Grise"],
+    "color": "white",
+    "origin_country": "France",
+    "origin_region": "Southern Rhône",
+    "typical_aromas": ["white peach", "apricot", "almonds", "chamomile", "white flowers"],
+    "typical_style": "Medium body, medium acidity, oxidizes rapidly if not handled carefully. A blending grape in white Châteauneuf-du-Pape and Languedoc whites. Clairette de Die AOC produces a delicate, Muscat-scented traditional-method sparkling wine.",
+    "classic_regions": ["Clairette de Die", "Châteauneuf-du-Pape blanc", "Coteaux du Languedoc"]
+  },
+  {
+    "name": "Piquepoul Noir",
+    "synonyms": ["Picpoul Noir"],
+    "color": "red",
+    "origin_country": "France",
+    "origin_region": "Languedoc",
+    "typical_aromas": ["red cherry", "plum", "herbs", "pepper"],
+    "typical_style": "Light-medium body, high acidity. The red version of Picpoul — extremely rare today. A blending grape in some Languedoc reds. Almost no varietal bottlings exist commercially.",
+    "classic_regions": ["Châteauneuf-du-Pape (permitted)", "Languedoc (historical)"]
+  }
+]

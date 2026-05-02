@@ -1,0 +1,5 @@
+{"type":"server-started","port":49720,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:49720","screen_dir":"/home/zach/Cru/.superpowers/brainstorm/1370859-1776020689/content","state_dir":"/home/zach/Cru/.superpowers/brainstorm/1370859-1776020689/state"}
+{"type":"screen-added","file":"/home/zach/Cru/.superpowers/brainstorm/1370859-1776020689/content/navigation.html"}
+{"type":"screen-added","file":"/home/zach/Cru/.superpowers/brainstorm/1370859-1776020689/content/aesthetic.html"}
+{"type":"screen-added","file":"/home/zach/Cru/.superpowers/brainstorm/1370859-1776020689/content/liquid-glass.html"}
+{"type":"server-stopped","reason":"idle timeout"}

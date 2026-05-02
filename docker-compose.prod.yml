@@ -1,0 +1,53 @@
+version: "3.9"
+
+# Production overrides — apply with:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+services:
+  cru-db:
+    restart: unless-stopped
+    # No port exposure in prod — access only through cru-network
+    ports: !reset []
+
+  cru-redis:
+    restart: unless-stopped
+    ports: !reset []
+
+  cru-minio:
+    restart: unless-stopped
+    # Console on 9001 is proxied through nginx; do not expose directly
+    ports:
+      - "9000:9000"
+
+  cru-backend:
+    restart: unless-stopped
+    # No source volume mount in prod — image is the artifact
+    volumes: !reset []
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
+    environment:
+      ENVIRONMENT: production
+    # No port exposure — nginx proxies into cru-network
+    ports: !reset []
+
+  cru-frontend:
+    restart: unless-stopped
+    # No source or node_modules mounts in prod — built image only
+    volumes: !reset []
+    # No port exposure — nginx proxies into cru-network
+    ports: !reset []
+
+  cru-nginx:
+    image: nginx:1.25-alpine
+    container_name: cru-nginx
+    restart: unless-stopped
+    depends_on:
+      - cru-backend
+      - cru-frontend
+    volumes:
+      - ./nginx/cru.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - cru-network
